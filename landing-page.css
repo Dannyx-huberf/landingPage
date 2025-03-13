@@ -1,0 +1,321 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url(/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'youngSheriff';
+  src: url(/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+body{
+    background-color: #f8f9fa;
+    font-family: 'Outfit';
+    font-size: 16px;
+    line-height: 1.5;
+    color: #212529;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Everything header*/
+.header{
+  background-image: url(/images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 15rem 0;
+  position: relative;
+}
+.header-nav-logo{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  color: #f8f9fa;
+}
+.hamburger{
+  display: none;
+}
+.nav-contact{
+  border-radius: 10px;
+  border-style: none;
+  font-family: 'youngSheriff';
+  padding:.35rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.nav-contact:hover{
+  background-color: transparent;
+  border: 1px solid white;
+}
+.nav-contact a{
+  text-decoration: none;
+  color: #212529;
+}
+.nav-contact a:visited{
+  color: purple;
+}
+.logo{
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.nav-list{
+  display: flex;
+  list-style: none;
+  font-size: 1.3rem;
+  
+}
+.nav-list li{
+  margin-left: 2rem;
+}
+.icon-arrow-down{
+  height: 40px;
+  position: absolute;
+  right:50%;
+}
+.header h1{
+  text-align: center;
+  margin-top: 4rem;
+  font-family: 'youngSheriff';
+  color: #f8f9fa;
+}
+.mobile-menu{
+  display: none;
+  background-color: white;
+  padding: 10px 40px;
+  position: absolute;
+  top: 60px;
+  right: 70px;
+  width: 100px;
+  box-shadow: 3px 5px 9px rgba(0,0,0,0.1);
+  font-size: 1.5rem;
+}
+.mobile-menu a{
+  text-decoration: none;
+  font-family: 'Outfit';
+  color: #494848;
+}
+.mobile-menu a:visited{
+  color: red;
+}
+.mobile-menu a:hover{
+  text-decoration: underline;
+  color: rebeccapurple;
+}
+/*Everything Layout*/
+main{
+  width: 100%;
+  margin: auto;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container-images img{
+  width: 100%;
+  height: 100%;
+}
+.transform,.stand-out{
+  padding: 10rem 3rem;
+}
+.transform h2,.stand-out h2{
+  font-family: 'youngSheriff';
+  font-size: 2rem;
+}
+.transform h2,.stand-out p{
+  color: hsl(212, 27%, 19%);
+}
+.transform span,.stand-out span{
+  font-family: 'youngSheriff';
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+  border-bottom: rgba(216, 216, 32, 0.911) dotted;
+  cursor: pointer;
+}
+.transform span:hover,.stand-out span:hover{
+  border-bottom: rgba(216, 84, 32, 0.911);
+  border-bottom-style:double;
+}
+.graphic-design{
+  background-image: url(/images/desktop/image-graphic-design.jpg);
+}
+.photography{
+  background-image: url(/images/desktop/image-photography.jpg);
+}
+.graphic-design,.photography{
+  padding: 12rem 3rem;
+  background-position: center;
+  background-clip: border-box;
+  background-size: cover;
+ 
+}
+.graphic-design h3,.photography h3{
+  text-align: center;
+  position: relative;
+  bottom: -140px;
+  font-size: 1rem;
+  font-family: 'youngSheriff';
+}
+.graphic-design p,.photography p{
+  text-align: center;
+  position: relative;
+  bottom: -130px;
+  font-weight: .75rem;
+  color: hsl(212, 27%, 19%);
+}
+.clt{
+  text-align: center;
+  font-family: 'youngSheriff';
+  font-size: .75rem;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  color: hsl(212, 27%, 19%);
+}
+.section-1{
+  border: 1px solid rebeccapurple;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  /* margin: auto; */
+  justify-content: space-around;
+}
+.client-name{
+  font-family: 'youngSheriff';
+  font-size: .75rem;
+}
+.client-position{
+  font-size: .55rem;
+}
+.clients-page{
+  border: #494848 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.clients{
+  height: 70px;
+  border-radius: 50%;
+  margin: auto;
+}
+.clients-page p{
+  text-align: center;
+  font-size: .65rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+  color:  hsl(232, 10%, 55%);
+}
+.clients-page span{
+  text-align: center;
+}
+.clients-page-one,.clients-page-two,
+.clients-page-three{
+  width: 200px;
+}
+.section-2{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.section-2-images img{
+  width: 100%;
+}
+footer{
+  text-align: center;
+  background-color: rgb(104, 151, 151);
+  margin-top: -30px;
+  padding: 4rem 0;
+}
+.footer-p{
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: hsl(167, 40%, 24%);
+}
+.footer-nav{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+}
+.footer-nav a{
+  text-decoration: none;
+  color: hsl(167, 40%, 24%);
+  cursor: pointer;
+}
+.footer-nav a:hover{
+  text-decoration: underline;
+  color:#f8f9fa;
+}
+.footer-nav li{
+  margin-left: 2rem;
+  color: hsl(167, 40%, 24%);
+}
+.icons a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.icons img{
+  margin-left: 2rem;
+}
+@media (max-width:650px){
+  .nav-bar{
+   display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+  .header{
+   padding: 5rem 0;
+  }
+  .header-nav-logo{
+   flex-direction: row;
+   align-items: center;
+  } 
+  .logo{
+   margin-top: 2rem;
+  }
+  .header h1{
+    font-size: 1.7rem;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .section-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .client-name{
+    font-family: 'youngSheriff';
+    font-size: 1rem;
+  }
+  .client-position{
+    font-size: .85rem;
+  }
+  .clients-page{
+    margin-bottom: 2rem;
+  }
+  .clients-page p{
+    font-size: 1rem;
+  }
+  .clients-page-one,.clients-page-two,
+  .clients-page-three{
+  width: 90%;
+  }
+  .section-2{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 0;
+  }
+  .section-2-images img{
+    width: 100%;
+  }
+ }
