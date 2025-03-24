@@ -18,7 +18,7 @@ body{
 }
 /*Everything header*/
 .header{
-  background-image: url(/images/desktop/image-header.jpg);
+  background-image: url(./images/desktop/image-header.jpg);
   background-size: cover;
   background-position: center;
   padding: 15rem 0;
